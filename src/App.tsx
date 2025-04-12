@@ -15,4 +15,8 @@ function App(): React.JSX.Element {
     );
 }
 
+export function AppHeading(): React.JSX.Element {
+    return <h1>heading</h1>;
+}
+
 export default App;
