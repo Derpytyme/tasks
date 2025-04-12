@@ -31,4 +31,17 @@ export function AppPicture(): React.JSX.Element {
     );
 }
 
+export function AppList(): React.JSX.Element {
+    return (
+        <div>
+            Ordered List:
+            <ol>
+                <li>I like money</li>
+                <li>I have lots of money</li>
+                <li>My money is infinite</li>
+            </ol>
+        </div>
+    );
+}
+
 export default App;
