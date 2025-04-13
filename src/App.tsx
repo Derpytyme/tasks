@@ -10,8 +10,9 @@ export function AppPicture(): React.JSX.Element {
     return (
         <div>
             <img
-                src="kirby-has-big-shoes-they-do-not-fit-his-little-guy-feet-v0-bk7wxlgx2lbc1.png"
+                src="/kirby-has-big-shoes-they-do-not-fit-his-little-guy-feet-v0-bk7wxlgx2lbc1.png"
                 alt="A silly lil guy"
+                style={{ maxWidth: "300px" }}
             />
         </div>
     );
@@ -91,10 +92,7 @@ function App(): React.JSX.Element {
             <header className="App-header">
                 UM COS420 with React Hooks and TypeScript
             </header>
-            <p>
-                Edit <code>src/App.tsx</code> and save. This page will
-                automatically reload. Xander is cool and epic also. Hello World
-            </p>
+            <p>Xander is cool and epic. Hello World</p>
             <AppHeading />
             <AppPicture />
             <AppList />
