@@ -2,20 +2,6 @@ import React from "react";
 import "./App.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
 
-function App(): React.JSX.Element {
-    return (
-        <div className="App">
-            <header className="App-header">
-                UM COS420 with React Hooks and TypeScript
-            </header>
-            <p>
-                Edit <code>src/App.tsx</code> and save. This page will
-                automatically reload. Xander is cool and epic also. Hello World
-            </p>
-        </div>
-    );
-}
-
 export function AppHeading(): React.JSX.Element {
     return <h1>heading</h1>;
 }
@@ -98,6 +84,25 @@ export function AppColumns(): React.JSX.Element {
                     </Col>
                 </Row>
             </Container>
+        </div>
+    );
+}
+
+function App(): React.JSX.Element {
+    return (
+        <div className="App">
+            <header className="App-header">
+                UM COS420 with React Hooks and TypeScript
+            </header>
+            <p>
+                Edit <code>src/App.tsx</code> and save. This page will
+                automatically reload. Xander is cool and epic also. Hello World
+            </p>
+            <AppHeading />
+            <AppPicture />
+            <AppList />
+            <AppButton />
+            <AppColumns />
         </div>
     );
 }
