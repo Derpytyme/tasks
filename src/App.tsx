@@ -10,7 +10,7 @@ export function AppPicture(): React.JSX.Element {
     return (
         <div>
             <img
-                src="src\kirby-has-big-shoes-they-do-not-fit-his-little-guy-feet-v0-bk7wxlgx2lbc1.png"
+                src="kirby-has-big-shoes-they-do-not-fit-his-little-guy-feet-v0-bk7wxlgx2lbc1.png"
                 alt="A silly lil guy"
             />
         </div>
@@ -20,7 +20,7 @@ export function AppPicture(): React.JSX.Element {
 export function AppList(): React.JSX.Element {
     return (
         <div>
-            Ordered List:
+            Here is a list of true facts:
             <ol>
                 <li>I like money</li>
                 <li>I have lots of money</li>
@@ -67,9 +67,7 @@ export function AppColumns(): React.JSX.Element {
                                 backgroundColor: "red",
                             }}
                         ></div>
-                        Second column. You can put whatever you want in here,
-                        and it will be on the right side. Maybe try adding an
-                        image?
+                        Second column.
                     </Col>
                     <Col>
                         <div
