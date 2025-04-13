@@ -3,13 +3,12 @@ import "./App.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
 
 export function AppHeading(): React.JSX.Element {
-    return <h1>heading</h1>;
+    return <h1>Why is this text so big?</h1>;
 }
 
 export function AppPicture(): React.JSX.Element {
     return (
         <div>
-            <h1>Hello World</h1>
             <img
                 src="src\kirby-has-big-shoes-they-do-not-fit-his-little-guy-feet-v0-bk7wxlgx2lbc1.png"
                 alt="A silly lil guy"
