@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import { Button, Col, Container, Row } from "react-bootstrap";
 
 function App(): React.JSX.Element {
     return (
@@ -40,6 +41,63 @@ export function AppList(): React.JSX.Element {
                 <li>I have lots of money</li>
                 <li>My money is infinite</li>
             </ol>
+        </div>
+    );
+}
+
+export function AppButton(): React.JSX.Element {
+    return (
+        <div>
+            <Button
+                onClick={() => {
+                    console.log("Hello World!");
+                }}
+            >
+                Log Hello World
+            </Button>
+        </div>
+    );
+}
+
+export function AppColumns(): React.JSX.Element {
+    return (
+        <div>
+            <Container>
+                <Row>
+                    <Col>
+                        <div
+                            style={{
+                                width: "50px",
+                                height: "30px",
+                                backgroundColor: "red",
+                            }}
+                        ></div>
+                        First column.
+                    </Col>
+                    <Col>
+                        <div
+                            style={{
+                                width: "50px",
+                                height: "30px",
+                                backgroundColor: "red",
+                            }}
+                        ></div>
+                        Second column. You can put whatever you want in here,
+                        and it will be on the right side. Maybe try adding an
+                        image?
+                    </Col>
+                    <Col>
+                        <div
+                            style={{
+                                width: "50px",
+                                height: "30px",
+                                backgroundColor: "red",
+                            }}
+                        ></div>
+                        Third Column
+                    </Col>
+                </Row>
+            </Container>
         </div>
     );
 }
